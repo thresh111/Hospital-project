@@ -12,9 +12,9 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup lang="ts"></script>
 
-<style lang="scss" scoped>
+<style scoped lang="scss">
 .bottom {
   width: 100%;
   height: 50px;

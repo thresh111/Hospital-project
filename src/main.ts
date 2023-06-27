@@ -5,6 +5,9 @@ import "@/style/reset.scss";
 // 引入ElementPlus
 import ElementPlus from "element-plus";
 import "element-plus/dist/index.css";
+// Element Plus 国际化
+//@ts-ignore
+import zhCn from "element-plus/dist/locale/zh-cn.mjs";
 // 引入路由
 import router from "@/router";
 // 引入全局组件
@@ -15,5 +18,7 @@ const app = createApp(App);
 app.component("HospitalTop", HospitalTop);
 app.component("HospitalBottom", HospitalBottom);
 app.use(router);
-app.use(ElementPlus);
+app.use(ElementPlus, {
+  locale: zhCn,
+});
 app.mount("#app");
