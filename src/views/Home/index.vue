@@ -24,8 +24,6 @@
         :background="true"
         layout="prev, pager, next, jumper,->,sizes,total"
         :total="400"
-        @size-change="sizeChange"
-        @current-change="currentChange"
       />
     </el-col>
     <el-col :span="4"> 456</el-col>
@@ -33,7 +31,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { ref } from "vue";
 import Carousel from "./Carousel/index.vue";
 import Search from "./Search/index.vue";
 import Level from "./Level/index.vue";
