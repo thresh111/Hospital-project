@@ -1,7 +1,7 @@
 <template>
   <div class="bottom">
     <div class="content">
-      <div class="left">京ICP备 13018369号 电话挂号010-56253825</div>
+      <div class="left">京ICP备 13018369号 电话挂号0451-56253825</div>
       <div class="right">
         <span>联系我们</span>
         <span>合作伙伴</span>

@@ -2,10 +2,14 @@
   <div class="top">
     <div class="content">
       <!-- 左侧 -->
+
       <div class="left">
-        <img src="../../assets/images/logo.png" />
-        <p>商医通 预约挂号统一挂号平台</p>
+        <router-link to="/home">
+          <img src="../../assets/images/logo.png" />
+        </router-link>
+        <p>京医通 预约挂号统一挂号平台</p>
       </div>
+
       <!-- 右侧 -->
       <div class="right">
         <p class="help">帮助中心</p>
@@ -17,18 +21,19 @@
 
 <script setup></script>
 
-<style lang="scss" scoped>
+<style scoped lang="scss">
 .top {
   position: fixed;
   z-index: 999;
   width: 100%;
   height: 70px;
-  // background-color: #fff;
+
   display: flex;
   justify-content: center;
   .content {
     width: 1200px;
     height: 70px;
+    background: white;
     display: flex;
     justify-content: space-between;
     .left {
@@ -47,8 +52,8 @@
     }
     .right {
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       font-size: 14px;
       color: #bbb;
       .help {
